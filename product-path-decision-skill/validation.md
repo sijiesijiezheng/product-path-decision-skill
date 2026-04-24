@@ -37,6 +37,19 @@ Without a decision layer:
 - It may miss the need for clarification
 - It may fail to separate direct task execution from decision-making scenarios
 
+### Baseline Screenshots
+
+The following screenshots show baseline behavior without the decision skill.  
+The model directly follows the user's request to improve resume wording instead of first checking whether wording is the real bottleneck.
+
+![DeepSeek baseline resume response 1](assets/baseline-deepseek-resume-01.png)
+
+![DeepSeek baseline resume response 2](assets/baseline-deepseek-resume-02.png)
+
+![DeepSeek baseline resume response 3](assets/baseline-deepseek-resume-03.png)
+
+![DeepSeek baseline resume response 4](assets/baseline-deepseek-resume-04.png)
+
 ### Conclusion
 
 This shows the need for a pre-execution decision layer.
@@ -220,6 +233,13 @@ Output:
 }
 ```
 
+### Weather Execution Screenshot
+
+The following screenshot shows the skill classifying a weather query as an execution task instead of answering it directly.
+
+![Final skill weather execution output](assets/final-skill-weather-execution.png)
+
+
 ### Conclusion
 
 The skill correctly prevents direct execution tasks from being processed as decision problems.
@@ -255,6 +275,13 @@ Output:
   "reason": "Improving wording alone may not significantly improve outcomes if the underlying content is weak, but this depends on the current resume quality. If the resume already has strong content, wording improvements may be sufficient; otherwise, restructuring content would be more effective."
 }
 ```
+
+### Skill Output Screenshot
+
+The following screenshot shows the final skill correctly identifying that resume wording optimization requires clarification.
+
+![Final skill resume clarification output](assets/final-skill-resume-clarification.png)
+
 
 ### Case B: Weight Loss
 
