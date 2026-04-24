@@ -314,6 +314,114 @@ Its value is in improving the step before an AI assistant answers or executes.
 
 ---
 
+## Load / Installation
+
+This repository can be used as a GitHub-hosted AI skill package.
+
+The core skill file is:
+
+```text
+SKILL.md
+```
+
+You can load or use this skill in the following ways.
+
+---
+
+### Option 1: Read directly from GitHub
+
+Open `SKILL.md` and use it as the instruction file for a chat-based AI assistant or agent workflow.
+
+GitHub repository:
+
+```text
+https://github.com/sijiesijiezheng/product-path-decision-skill
+```
+
+Skill file:
+
+```text
+product-path-decision-skill/SKILL.md
+```
+
+Use this option when you want to inspect, copy, or adapt the skill manually.
+
+---
+
+### Option 2: Clone the skill package
+
+Clone the repository:
+
+```bash
+git clone https://github.com/sijiesijiezheng/product-path-decision-skill.git
+```
+
+Then use the skill file at:
+
+```text
+product-path-decision-skill/product-path-decision-skill/SKILL.md
+```
+
+This is suitable for local agent workflows, custom assistants, or workflow tools that can read local instruction files.
+
+---
+
+### Option 3: Use as a pre-execution decision node
+
+This skill can be placed before the final answer generation step in an AI workflow:
+
+```text
+User input
+→ Product Path Decision Skill
+→ decision / direction / execution routing
+→ answer, clarify, or redirect
+```
+
+This is the recommended integration pattern for chat-based AI assistants, enterprise chatbots, career assistants, learning assistants, and product-building agents.
+
+---
+
+### Option 4: Adapt into a Custom GPT or agent instruction
+
+You can paste the content of `SKILL.md` into a Custom GPT, agent system prompt, or workflow node.
+
+The skill should be used before the assistant answers the user.
+
+Expected behavior:
+
+```text
+Before answering, classify the user input and decide whether to execute, clarify, or redirect.
+```
+
+The output should remain structured JSON.
+
+---
+
+## Trigger patterns
+
+Use this skill when the user's message follows patterns such as:
+
+```text
+I want to achieve X, so I plan to do Y.
+Should I do X by doing Y?
+I want to quickly do X, can you help me do Y?
+I plan to solve X by doing Y.
+I want to build X, so I will start with Y.
+```
+
+The skill is especially useful when the user may be proposing a path based on limited knowledge or an incomplete understanding of the task.
+
+---
+
+## Current distribution status
+
+This is a GitHub-hosted skill prototype.
+
+It is not currently distributed through a plugin marketplace.
+
+It can be loaded, cloned, adapted, or embedded into agent workflows using the `SKILL.md` file.
+
+
 ## How to use
 
 ### 1. As an Agent / Codex skill
