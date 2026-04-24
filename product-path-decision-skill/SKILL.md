@@ -1,3 +1,16 @@
+---
+name: product-path-decision
+description: "Pre-execution decision skill for chat-based AI assistants. Use when a user has a goal and a proposed approach. It classifies decision/direction/execution inputs, detects suboptimal paths, and decides whether clarification is needed before answering."
+license: MIT
+user-invocable: true
+metadata:
+  version: 1.0.0
+  domains:
+    - decision-layer
+    - routing
+    - pre-execution
+    - ai-assistant
+---
 # Product Path Decision Skill
 
 ## Purpose
