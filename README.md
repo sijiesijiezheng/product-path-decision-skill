@@ -84,7 +84,9 @@ The goal is to make the AI pause when the user's proposed path may be wrong.
 ## Skill Architecture
 <img width="2804" height="4283" alt="mermaid-diagram" src="https://github.com/user-attachments/assets/f0efecc9-5764-4205-a686-5f3ade3f06b6" />
 
+## Future RAG-enhanced Version
 
+<img width="1096" height="1821" alt="mermaid-diagram (1)" src="https://github.com/user-attachments/assets/fa64c78a-1e0a-4634-95c1-3590dbbd8600" />
 
 ## Why this matters
 
