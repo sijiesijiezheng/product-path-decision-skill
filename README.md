@@ -81,6 +81,11 @@ The goal is to make the AI pause when the user's proposed path may be wrong.
 
 ---
 
+## Skill Architecture
+<img width="2804" height="4283" alt="mermaid-diagram" src="https://github.com/user-attachments/assets/f0efecc9-5764-4205-a686-5f3ade3f06b6" />
+
+
+
 ## Why this matters
 
 Many AI assistants are optimized to be helpful and compliant.
